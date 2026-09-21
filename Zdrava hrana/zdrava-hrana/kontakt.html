@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt — Zdrava hrana | Pišite nam ili nas posetite</title>
+  <meta name="description" content="Kontaktirajte tim Zdrava hrana — formular, telefon, e-mail i lokacija na mapi." />
+  <meta property="og:title" content="Kontakt — Zdrava hrana" />
+  <meta property="og:description" content="Pišite nam, pozovite ili nas posetite." />
+  <link rel="canonical" href="kontakt.html" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/stil.css" />
+</head>
+<body>
+  <header class="zaglavlje">
+    <nav class="navbar">
+      <a href="index.html" class="logo-link"><img src="img/logo1.png" alt="Logo" width="40" height="40"/><span>Bio šop Ruža</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="meni" id="glavniMeni">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li class="padajuci"><a href="usluge.html">Usluge</a>
+          <ul class="podmeni">
+            <li><a href="usluge.html#savetovanje">Savetovanje</a></li>
+            <li><a href="usluge.html#plan">Plan ishrane</a></li>
+            <li><a href="usluge.html#radionice">Radionice</a></li>
+          </ul>
+        </li>
+        <li><a href="recepti.html">Recepti</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="alatke">
+        <button id="fontMinus" aria-label="Smanji font">A-</button>
+        <button id="fontPlus" aria-label="Povećaj font">A+</button>
+        <button id="tasterTema" aria-label="Promeni temu">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sekcija uzak">
+      <h1 class="naslov-sekcije">Kontaktirajte nas</h1>
+      <p style="text-align:center">📞 +025 440 011 · ✉️ biosopruza@gmail.com · 📍 Alekse Šantića 11, Sombor</p>
+
+      <form class="forma" id="kontaktForma" novalidate>
+        <div class="polje">
+          <label for="ime">Ime i prezime *</label>
+          <input type="text" id="ime" name="ime" required minlength="2" maxlength="60" autocomplete="name" />
+          <div class="greska" role="alert"></div>
+        </div>
+
+        <div class="polje">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+          <div class="greska" role="alert"></div>
+        </div>
+
+        <div class="polje">
+          <label for="telefon">Telefon (opciono)</label>
+          <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="+381..." />
+          <div class="greska" role="alert"></div>
+        </div>
+
+        <div class="polje">
+          <label for="tema">Tema poruke *</label>
+          <select id="tema" name="tema" required>
+            <option value="">— Izaberi —</option>
+            <option value="savetovanje">Online savetovanje</option>
+            <option value="plan">Personalizovani plan ishrane</option>
+            <option value="radionica">Prijava na radionicu</option>
+            <option value="ostalo">Ostalo</option>
+          </select>
+          <div class="greska" role="alert"></div>
+        </div>
+
+        <div class="polje">
+          <label for="poruka">Poruka *</label>
+          <textarea id="poruka" name="poruka" rows="5" required minlength="10" maxlength="1000"></textarea>
+          <div class="greska" role="alert"></div>
+          <small id="brojacZnakova" style="color:var(--boja-mut)">0 / 1000</small>
+        </div>
+
+        <div class="polje">
+          <label style="display:flex;gap:0.6rem;align-items:flex-start;cursor:pointer">
+            <input type="checkbox" id="saglasnost" name="saglasnost" required style="width:auto;margin-top:0.3rem"/>
+            <span>Saglasan/na sam sa <a href="#">uslovima korišćenja</a> i obradom podataka. *</span>
+          </label>
+          <div class="greska" role="alert"></div>
+        </div>
+
+        <button type="submit" class="dugme">Pošalji poruku</button>
+        <div class="poruka-uspeh" id="porukaUspeh" role="status">
+          ✅ Hvala! Vaša poruka je uspešno poslata. Odgovorićemo u roku od 24 sata.
+        </div>
+      </form>
+
+      <h2 style="margin-top:3rem">Naša lokacija</h2>
+      <div class="mapa-okvir">
+        <!-- Google Maps embedded -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5566.519119320827!2d19.115833077426018!3d45.76598821325063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475cb58f1f763f1d%3A0x7f4428715ee7cb33!2zQmlvIMWhb3AgIlJ1xb5hIg!5e0!3m2!1ssr!2srs!4v1779750770789!5m2!1ssr!2srs">
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Naša lokacija na mapi"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="futer">
+    <p>© <span id="godina"></span> Bio šop Ruža</p>
+  </footer>
+
+  <script src="js/skripta.js"></script>
+  <script src="js/validacija.js"></script>
+</body>
+</html>

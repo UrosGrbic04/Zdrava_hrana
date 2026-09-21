@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O nama — Zdrava hrana | Naš tim i misija</title>
+  <meta name="description" content="Upoznajte tim Zdrava hrana — nutricioniste i edukatore koji vam pomažu da promenite navike u ishrani." />
+  <meta property="og:title" content="O nama — Zdrava hrana" />
+  <meta property="og:description" content="Tim i misija portala Zdrava hrana." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="o-nama.html" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/stil.css" />
+</head>
+<body>
+  <header class="zaglavlje">
+    <nav class="navbar" aria-label="Glavna navigacija">
+      <a href="index.html" class="logo-link"><img src="img/logo1.png" alt="Logo" width="40" height="40"/><span>Bio šop Ruža</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="meni" id="glavniMeni">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li class="padajuci"><a href="usluge.html">Usluge</a>
+          <ul class="podmeni">
+            <li><a href="usluge.html#savetovanje">Savetovanje</a></li>
+            <li><a href="usluge.html#plan">Plan ishrane</a></li>
+            <li><a href="usluge.html#radionice">Radionice</a></li>
+          </ul>
+        </li>
+        <li><a href="recepti.html">Recepti</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="alatke">
+        <button id="fontMinus" aria-label="Smanji font">A-</button>
+        <button id="fontPlus" aria-label="Povećaj font">A+</button>
+        <button id="tasterTema" aria-label="Promeni temu">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sekcija">
+      <h1 class="naslov-sekcije">O nama</h1>
+      <img src="img/Radnja.jpg" alt="Tim nutricionista" width="1200" height="800" style="border-radius:12px;box-shadow:var(--senka);margin-bottom:2rem" loading="lazy" />
+
+      <div class="fade-in">
+        <h2>Naša misija</h2>
+        <p>Verujemo da zdrava ishrana ne mora biti komplikovana ni skupa. Naš zadatak je da svakome pružimo razumljive informacije, jednostavne recepte i podršku stručnjaka — kako bi promene koje napravite ostale s vama doživotno.</p>
+      </div>
+
+      <div class="fade-in">
+        <h2>Šta nas izdvaja</h2>
+        <ul style="padding-left:1.4rem;color:var(--boja-mut);line-height:1.9">
+          <li>Više od <strong>10 godina</strong> iskustva u kliničkoj nutriciji.</li>
+          <li>Preko <strong>5.000 zadovoljnih klijenata</strong> kroz programe savetovanja.</li>
+          <li>Saradnja sa lokalnim proizvođačima organske hrane.</li>
+          <li>Sav sadržaj proveravan od strane lekara i diplomiranih nutricionista.</li>
+        </ul>
+      </div>
+
+      <div class="fade-in">
+        <h2>Vrednosti tima</h2>
+        <div class="mreza">
+          <article class="kartica"><div class="kartica-telo"><h3>Stručnost</h3><p>Naši saveti su zasnovani na najnovijim naučnim istraživanjima.</p></div></article>
+          <article class="kartica"><div class="kartica-telo"><h3>Pristupačnost</h3><p>Sadržaj prilagođen svim uzrastima i nivoima znanja.</p></div></article>
+          <article class="kartica"><div class="kartica-telo"><h3>Empatija</h3><p>Svaki klijent dobija individualan pristup i razumevanje.</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="futer">
+    <p>© <span id="godina"></span> Bio šop Ruža</p>
+  </footer>
+  <script src="js/skripta.js"></script>
+</body>
+</html>
